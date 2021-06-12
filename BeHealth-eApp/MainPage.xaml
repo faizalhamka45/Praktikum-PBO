@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:BeHealth_eApp.CustomRenderer"
+             x:Class="BeHealth_eApp.MainPage">
+
+    <StackLayout Padding="0">
+        
+            <Grid>
+                <StackLayout Padding="0" Margin="0">
+                <Frame BackgroundColor="LightPink" HeightRequest="150" HorizontalOptions="FillAndExpand" Padding="0">
+                    <Image Source="https://images.pexels.com/photos/235922/pexels-photo-235922.jpeg" Aspect="AspectFill" Margin="0"/>
+                </Frame>    
+                
+                </StackLayout>
+                <StackLayout Margin="15,110,15,0">
+                <Frame BackgroundColor="White" HasShadow="True" HeightRequest="350" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+                            <Label Text="Masukkan Data Diri" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+                        </StackLayout>
+
+                        <StackLayout Margin="0,25,0,0">
+                            <Frame BackgroundColor="Transparent" Margin="0" Padding="0" BorderColor="DarkGray" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+                                        
+                                    </Frame>
+
+
+                                    <Entry x:Name="etrName" Placeholder="Nama" TextColor="HotPink" HorizontalOptions="FillAndExpand" Margin="0,0,15,0" />
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame BackgroundColor="Transparent" Margin="0" Padding="0" BorderColor="DarkGray" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+
+                                    </Frame>
+
+                                    <Entry x:Name="etrBodyWeight" Keyboard="Numeric" Placeholder="Berat Badan (kg)" TextColor="HotPink" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame BackgroundColor="Transparent" Margin="0" Padding="0" BorderColor="DarkGray" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+
+                                    </Frame>
+
+                                    <Entry x:Name="etrBodyHeight" Keyboard="Numeric" Placeholder="Tinggi Badan (cm)" TextColor="HotPink" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame BackgroundColor="Transparent" Margin="0" Padding="0" BorderColor="DarkGray" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+
+                                    </Frame>
+
+                                    <Picker x:Name="pkrGender" Title="Pilih Jenis Kelamin" SelectedIndexChanged="Gender_SelectedIndexChanged" SelectedItem="{Binding Gender}" >
+                                        <Picker.ItemsSource>
+                                            <x:Array Type="{x:Type x:String}">
+                                                <x:String>laki-laki</x:String>
+                                                <x:String >perempuan</x:String>
+                                            </x:Array>
+                                        </Picker.ItemsSource>
+                                    </Picker>
+                                </StackLayout>
+                            </Frame>
+
+                        
+                            <Button x:Name="btnDataSet" Text="Set Data" BackgroundColor="OrangeRed" TextColor="White" FontAttributes="Bold" CornerRadius="30" Clicked="btnDataSet_Clicked"/>
+
+
+
+                        </StackLayout>
+                    </StackLayout>
+
+                </Frame>
+                </StackLayout>
+        </Grid>
+        
+    </StackLayout>
+
+</ContentPage>

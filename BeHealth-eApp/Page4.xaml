@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeHealth_eApp.Page4">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Pengaturan Notifikasi" TextColor="#276678"
+                   FontSize="24" FontAttributes="Bold" Margin="30, 30, 30, 20"
+                   Padding="0" FontFamily="ptsans_bold.ttf"
+                   VerticalOptions="Start" HorizontalOptions="Start"/>
+            <Label Text="Kamu dapat menghidupkan atau mematikan notifikasi dengan klik tombol berwarna biru di bawah ini"
+                   FontSize="14" FontFamily="ptsans.ttf" Margin="30, 0, 30, 20" TextColor="#1687a7"/>
+            <Frame HeightRequest="130" WidthRequest="300"
+                   CornerRadius="20" HasShadow="True" IsClippedToBounds="True"
+                   Padding="0" BackgroundColor="#D3E0EA"
+                   VerticalOptions="Center" HorizontalOptions="Center">
+                <Grid>
+                    <Frame WidthRequest="150" HeightRequest="130"
+                           Margin="0" Padding="0" CornerRadius="20"
+                           VerticalOptions="Start" HorizontalOptions="Start">
+                        <Image Margin="0" Aspect="AspectFill"
+                               HeightRequest="130" WidthRequest="150"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="StartAndExpand"
+                               Source="Sport.jpg"/>
+                    </Frame>
+                    <Label Text="OLAHRAGA" Padding="0" FontFamily="ptsans.ttf"
+                           Margin="25" TextColor="#276678" FontSize="18"
+                           HorizontalOptions="End" VerticalOptions="Start"/>
+                    <Button x:Name="btnSport" Text="ON" TextColor="#F6F5F5" BackgroundColor="#1687A7"
+                            FontSize="18" FontFamily="ptsans_bold.ttf" 
+                            CornerRadius="50" Margin="25" Padding="0"
+                            VerticalOptions="EndAndExpand" HorizontalOptions="End"
+                            HeightRequest="40" WidthRequest="80"/>
+                </Grid>
+            </Frame>
+            <Frame HeightRequest="130" WidthRequest="300" Margin="10"
+                   CornerRadius="20" HasShadow="True" IsClippedToBounds="True"
+                   Padding="0" BackgroundColor="#D3E0EA"
+                   VerticalOptions="Center" HorizontalOptions="Center">
+                <Grid Padding="0">
+                    <Frame WidthRequest="150" HeightRequest="130"
+                           Margin="0" Padding="0" CornerRadius="20"
+                           VerticalOptions="Start" HorizontalOptions="Start">
+                        <Image Margin="0" Aspect="AspectFill"
+                           HeightRequest="130" WidthRequest="150"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="StartAndExpand"
+                           Source="Healthy.jpg"/>
+                    </Frame>
+                    <Label Text="MAKANAN" Padding="0" FontFamily="ptsans.ttf"
+                           Margin="30" TextColor="#276678" FontSize="18"
+                           VerticalOptions="Start"
+                           HorizontalOptions="End"/>
+                    <Button x:Name="btnMakan" Clicked="btnMakan_Clicked" Text="ON" TextColor="#F6F5F5" BackgroundColor="#1687A7"
+                            FontSize="18" FontFamily="ptsans_bold.ttf" 
+                            CornerRadius="50" Margin="25" Padding="0"
+                            VerticalOptions="EndAndExpand" HorizontalOptions="End"
+                            HeightRequest="40" WidthRequest="80"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:uibehealthe="clr-namespace:BeHealth_eApp"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" xmlns:behealht_eapp="clr-namespace:BeHealth_eApp"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            BarBackgroundColor="#D3E0EA"
+            x:Class="BeHealth_eApp.TabbedPage1">
+    <!--Pages can be added as references or inline-->
+    <behealht_eapp:Page1 Title="IMB" IconImageSource="IMB.png"></behealht_eapp:Page1>
+    <behealht_eapp:Page2 Title="Olahraga" IconImageSource="OR.png"></behealht_eapp:Page2>
+    <behealht_eapp:Page3 Title="Makanan" IconImageSource="Food.png"></behealht_eapp:Page3>
+    <behealht_eapp:Page4 Title="Notifikasi" IconImageSource="Notif.png"></behealht_eapp:Page4>
+    <behealht_eapp:Page5 Title="Edit" IconImageSource="Edit.png"></behealht_eapp:Page5>
+</TabbedPage>

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeHealth_eApp.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Rekomendasi Olahraga Rutin" TextColor="#276678"
+                   FontSize="24" FontAttributes="Bold" Margin="30, 30, 30, 20"
+                   Padding="0" FontFamily="ptsans_bold.ttf"
+                   VerticalOptions="Start" HorizontalOptions="Start"/>
+            <ScrollView>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Frame HeightRequest="200" WidthRequest="300" CornerRadius="20" Grid.Row="0"
+                       HasShadow="True" IsClippedToBounds="True" BackgroundColor="White"
+                       Padding="0" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Grid>
+                                <Frame HeightRequest="150" WidthRequest="300" Margin="0" Padding="0"                               
+                                   VerticalOptions="Start" HorizontalOptions="Start">
+                                    <Image x:Name="imgBeban" Margin="0" Aspect="AspectFill"
+                                       HeightRequest="150" WidthRequest="300"
+                                       VerticalOptions="CenterAndExpand"
+                                       HorizontalOptions="StartAndExpand"
+                                       Source="Beban.jpg"/>
+                                </Frame>
+                                <Label Text="Latihan Beban" FontFamily="ptsans_bold.ttf" FontSize="20" TextColor="#d3e0ea"
+                                   Margin="10, 0, 10, 10" HorizontalOptions="End" VerticalOptions="End"/>
+                            </Grid>
+                            <Label x:Name="txtBeban" Text="Latihan Beban adalah latihan untuk menguatkan fisik dan menambah ukuran otot." 
+                               FontFamily="ptsans.ttf" FontSize="14" TextColor="#1687a7"
+                               Margin="10, 0, 10, 5" HorizontalOptions="Start" VerticalOptions="End"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="200" WidthRequest="300" CornerRadius="20" Grid.Row="1"
+                       HasShadow="True" IsClippedToBounds="True" BackgroundColor="White"
+                       Padding="0" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Grid>
+                                <Frame HeightRequest="150" WidthRequest="300" Margin="0" Padding="0"                               
+                                   VerticalOptions="Start" HorizontalOptions="Start">
+                                    <Image Margin="0" Aspect="AspectFill"
+                                       HeightRequest="150" WidthRequest="300"
+                                       VerticalOptions="CenterAndExpand"
+                                       HorizontalOptions="StartAndExpand"
+                                       Source="Pushup.jpg"/>
+                                </Frame>
+                                <Label Text="Push Up" FontFamily="ptsans_bold.ttf" FontSize="20" TextColor="#d3e0ea"
+                                   Margin="10, 0, 10, 10" HorizontalOptions="End" VerticalOptions="End"/>
+                            </Grid>
+                            <Label Text="Push up adalah suatu jenis senam kekuatan untuk menguatkan otot bisep dan trisep." 
+                               FontFamily="ptsans.ttf" FontSize="14" TextColor="#1687a7"
+                               Margin="10, 0, 10, 5" HorizontalOptions="Start" VerticalOptions="End"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="200" WidthRequest="300" CornerRadius="20" Grid.Row="2"
+                       HasShadow="True" IsClippedToBounds="True" BackgroundColor="White"
+                       Padding="0" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Grid>
+                                <Frame HeightRequest="150" WidthRequest="300" Margin="0" Padding="0"                               
+                                   VerticalOptions="Start" HorizontalOptions="Start">
+                                    <Image x:Name="imgSquat" Margin="0" Aspect="AspectFill"
+                                       HeightRequest="150" WidthRequest="300"
+                                       VerticalOptions="CenterAndExpand"
+                                       HorizontalOptions="StartAndExpand"
+                                       Source="Squat.jpg"/>
+                                </Frame>
+                                <Label Text="Squat" FontFamily="ptsans_bold.ttf" FontSize="20" TextColor="#d3e0ea"
+                                   Margin="10, 0, 10, 10" HorizontalOptions="End" VerticalOptions="End"/>
+                            </Grid>
+                            <Label x:Name="txtSquat" Text="Squat adalah latihan kekuatan dengan menurunkan pinggul dari posisi berdiri lalu berdiri kembali." 
+                               FontFamily="ptsans.ttf" FontSize="14" TextColor="#1687a7"
+                               Margin="10, 0, 10, 5" HorizontalOptions="Start" VerticalOptions="End"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="200" WidthRequest="300" CornerRadius="20" Grid.Row="3"
+                       HasShadow="True" IsClippedToBounds="True" BackgroundColor="White"
+                       Padding="0" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Grid>
+                                <Frame HeightRequest="150" WidthRequest="300" Margin="0" Padding="0"                               
+                                   VerticalOptions="Start" HorizontalOptions="Start">
+                                    <Image x:Name="imgJogging" Margin="0" Aspect="AspectFill"
+                                       HeightRequest="150" WidthRequest="300"
+                                       VerticalOptions="CenterAndExpand"
+                                       HorizontalOptions="StartAndExpand"
+                                       Source="Jogging.jpg"/>
+                                </Frame>
+                                <Label Text="Jogging" FontFamily="ptsans_bold.ttf" FontSize="20" TextColor="#d3e0ea"
+                                   Margin="10, 0, 10, 10" HorizontalOptions="End" VerticalOptions="End"/>
+                            </Grid>
+                            <Label x:Name="txtJogging" Text="Jogging adalah lari dengan langkah perlahan untuk meningkatkan kebugaran fisik." 
+                               FontFamily="ptsans.ttf" FontSize="14" TextColor="#1687a7"
+                               Margin="10, 0, 10, 5" HorizontalOptions="Start" VerticalOptions="End"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="200" WidthRequest="300" CornerRadius="20" Grid.Row="4"
+                       HasShadow="True" IsClippedToBounds="True" BackgroundColor="White"
+                       Padding="0" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Grid>
+                                <Frame HeightRequest="150" WidthRequest="300" Margin="0" Padding="0"                               
+                                   VerticalOptions="Start" HorizontalOptions="Start">
+                                    <Image x:Name="imgSkipping" Margin="0" Aspect="AspectFill"
+                                       HeightRequest="150" WidthRequest="300"
+                                       VerticalOptions="CenterAndExpand"
+                                       HorizontalOptions="StartAndExpand"
+                                       Source="Skipping.jpg"/>
+                                </Frame>
+                                <Label Text="Lompat Tali" FontFamily="ptsans_bold.ttf" FontSize="20" TextColor="#d3e0ea"
+                                   Margin="10, 0, 10, 10" HorizontalOptions="End" VerticalOptions="End"/>
+                            </Grid>
+                            <Label x:Name="txtSkipping" Text="Lompat Tali yaitu melompati sebuah tali yang dikibaskan sehingga melintasi bawah kaki dan atas kepala." 
+                               FontFamily="ptsans.ttf" FontSize="14" TextColor="#1687a7"
+                               Margin="10, 0, 10, 5" HorizontalOptions="Start" VerticalOptions="End"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="200" WidthRequest="300" CornerRadius="20" Grid.Row="5"
+                       HasShadow="True" IsClippedToBounds="True" BackgroundColor="White"
+                       Padding="0" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Grid>
+                                <Frame HeightRequest="150" WidthRequest="300" Margin="0" Padding="0"                               
+                                   VerticalOptions="Start" HorizontalOptions="Start">
+                                    <Image Margin="0" Aspect="AspectFill"
+                                       HeightRequest="150" WidthRequest="300"
+                                       VerticalOptions="CenterAndExpand"
+                                       HorizontalOptions="StartAndExpand"
+                                       Source="Bersepeda.jpg"/>
+                                </Frame>
+                                <Label Text="Bersepeda" FontFamily="ptsans_bold.ttf" FontSize="20" TextColor="#d3e0ea"
+                                   Margin="10, 0, 10, 10" HorizontalOptions="End" VerticalOptions="End"/>
+                            </Grid>
+                            <Label Text="Olahraga dengan mengayuh sepeda ini dapat membakar kalori dan lemak secara efektif." 
+                               FontFamily="ptsans.ttf" FontSize="14" TextColor="#1687a7"
+                               Margin="10, 0, 10, 5" HorizontalOptions="Start" VerticalOptions="End"/>
+                        </StackLayout>
+                    </Frame>
+                </Grid>
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeHealth_eApp.Page5">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Edit Data Diri" TextColor="#276678"
+                   FontSize="24" FontAttributes="Bold" Margin="30, 30, 30, 20"
+                   Padding="0" FontFamily="ptsans_bold.ttf"
+                   VerticalOptions="Start" HorizontalOptions="Start"/>
+            <Frame HeightRequest="40" WidthRequest="300" CornerRadius="20"
+                   BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand"
+                   Margin="0" Padding="0" HasShadow="True" BorderColor="#1687a7">
+                <Entry x:Name="etrName" Placeholder="Nama" FontFamily="ptsans.ttf" ClearButtonVisibility="WhileEditing"
+                       HorizontalOptions="FillAndExpand" MaxLength="50" Keyboard="Default" Margin="10, 0, 10 ,0"/>
+            </Frame>
+            <Frame HeightRequest="40" WidthRequest="300" CornerRadius="20"
+                   BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand"
+                   Margin="0" Padding="0" HasShadow="True" BorderColor="#1687a7">
+                <Entry x:Name="etrBodyWeight" Placeholder="Berat Badan (kg)" FontFamily="ptsans.ttf" ClearButtonVisibility="WhileEditing"
+                       HorizontalOptions="FillAndExpand" Keyboard="Numeric" Margin="10, 0, 10 ,0"/>
+            </Frame>
+            <Frame HeightRequest="40" WidthRequest="300" CornerRadius="20"
+                   BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand"
+                   Margin="0" Padding="0" HasShadow="True" BorderColor="#1687a7">
+                <Entry x:Name="etrBodyHeight" Placeholder="Tinggi Badan (cm)" FontFamily="ptsans.ttf" ClearButtonVisibility="WhileEditing"
+                       HorizontalOptions="FillAndExpand" Keyboard="Numeric" Margin="10, 0, 10 ,0"/>
+            </Frame>
+
+            <Frame HeightRequest="40" WidthRequest="300" CornerRadius="20"
+                   BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand"
+                   Margin="0" Padding="0" HasShadow="True" BorderColor="#1687a7">
+                    <Picker x:Name="etrGender" Title="pilih jenis kelamin" SelectedIndexChanged="etrGender_SelectedIndexChanged">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String >laki-laki</x:String>
+                            <x:String >perempuan</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                    </Picker>
+            </Frame>
+
+
+
+            <Button x:Name="btnUpdate" Clicked="btnUpdate_Clicked" Text="Perbarui Data" FontFamily="ptsans_bold.ttf" CornerRadius="20"
+                    BackgroundColor="#1687a7" TextColor="#f6f5f5" Margin="0, 20, 0, 0"
+                    WidthRequest="300" HorizontalOptions="Center"/>
+
+            <Button x:Name="btnReset" Clicked="btnReset_Clicked" Text="Reset" FontFamily="ptsans_bold.ttf" CornerRadius="20"
+                    BackgroundColor="#1687a7" TextColor="#f6f5f5" Margin="0, 20, 0, 0"
+                    WidthRequest="300" HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

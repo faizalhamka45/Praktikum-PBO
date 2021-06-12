@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeHealth_eApp.Page3">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Rekomendasi Makanan dan Minuman Sehat" TextColor="#276678"
+                   FontSize="24" Margin="30, 30, 30, 20"
+                   Padding="0" FontFamily="ptsans_bold.ttf"
+                   VerticalOptions="Start" HorizontalOptions="Start"/>
+            <ScrollView>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Frame HeightRequest="200" WidthRequest="300" CornerRadius="20" Grid.Row="0"
+                           HasShadow="True" IsClippedToBounds="True" BackgroundColor="White"
+                           Padding="0" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Grid>
+                                <Frame HeightRequest="150" WidthRequest="300" Margin="0" Padding="0"                               
+                                       VerticalOptions="Start" HorizontalOptions="Start">
+                                    <Image Margin="0" Aspect="AspectFill"
+                                           HeightRequest="150" WidthRequest="300"
+                                           VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="StartAndExpand"
+                                           Source="Sapi.jpg"/>
+                                </Frame>
+                                <Label Text="Daging Sapi" FontFamily="ptsans_bold.ttf" FontSize="20" TextColor="White"
+                                       Margin="10, 0, 10, 10" HorizontalOptions="End" VerticalOptions="End"/>
+                            </Grid>
+                            <Label Text="Daging sapi mengandung kalori yang tinggi sehingga dapat membantu membangun otot." 
+                                   FontFamily="ptsans.ttf" FontSize="14" TextColor="#1687a7"
+                                   Margin="10, 0, 10, 5" HorizontalOptions="Start" VerticalOptions="End"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="200" WidthRequest="300" CornerRadius="20" Grid.Row="1"
+                           HasShadow="True" IsClippedToBounds="True" BackgroundColor="White"
+                           Padding="0" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Grid>
+                                <Frame HeightRequest="150" WidthRequest="300" Margin="0" Padding="0"                               
+                                       VerticalOptions="Start" HorizontalOptions="Start">
+                                    <Image x:Name="imgChocolate" Margin="0" Aspect="AspectFill"
+                                           HeightRequest="150" WidthRequest="300"
+                                           VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="StartAndExpand"
+                                           Source="Cokelat.jpg"/>
+                                </Frame>
+                                <Label x:Name="txtChocolate" Text="Dark Chocolate" FontFamily="ptsans_bold.ttf" FontSize="20" TextColor="White"
+                                       Margin="10, 0, 10, 10" HorizontalOptions="End" VerticalOptions="End"/>
+                            </Grid>
+                            <Label Text="Dark chocolate merupakan sumber kalori yang juga kaya akan antioksidan serta mikronutrien." 
+                                   FontFamily="ptsans.ttf" FontSize="14" TextColor="#1687a7"
+                                   Margin="10, 0, 10, 5" HorizontalOptions="Start" VerticalOptions="End"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="200" WidthRequest="300" CornerRadius="20" Grid.Row="2"
+                           HasShadow="True" IsClippedToBounds="True" BackgroundColor="White"
+                           Padding="0" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Grid>
+                                <Frame HeightRequest="150" WidthRequest="300" Margin="0" Padding="0"                               
+                                       VerticalOptions="Start" HorizontalOptions="Start">
+                                    <Image Margin="0" Aspect="AspectFill"
+                                           HeightRequest="150" WidthRequest="300"
+                                           VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="StartAndExpand"
+                                           Source="Salmon.jpg"/>
+                                </Frame>
+                                <Label Text="Ikan Salmon" FontFamily="ptsans_bold.ttf" FontSize="20" TextColor="White"
+                                       Margin="10, 0, 10, 10" HorizontalOptions="End" VerticalOptions="End"/>
+                            </Grid>
+                            <Label Text="Salmon mengandung lemak sehat, protein, dan omega-3 yang baik untuk tubuh." 
+                                   FontFamily="ptsans.ttf" FontSize="14" TextColor="#1687a7"
+                                   Margin="10, 0, 10, 5" HorizontalOptions="Start" VerticalOptions="End"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="200" WidthRequest="300" CornerRadius="20" Grid.Row="3"
+                           HasShadow="True" IsClippedToBounds="True" BackgroundColor="White"
+                           Padding="0" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Grid>
+                                <Frame HeightRequest="150" WidthRequest="300" Margin="0" Padding="0"                               
+                                       VerticalOptions="Start" HorizontalOptions="Start">
+                                    <Image Margin="0" Aspect="AspectFill"
+                                           HeightRequest="150" WidthRequest="300"
+                                           VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="StartAndExpand"
+                                           Source="Ayam.jpg"/>
+                                </Frame>
+                                <Label Text="Dada Ayam" FontFamily="ptsans_bold.ttf" FontSize="20" TextColor="White"
+                                       Margin="10, 0, 10, 10" HorizontalOptions="Start" VerticalOptions="End"/>
+                            </Grid>
+                            <Label Text="Dada ayam (tanpa kulit) mengandung banyak protein dan lemak yang rendah." 
+                                   FontFamily="ptsans.ttf" FontSize="14" TextColor="#1687a7"
+                                   Margin="10, 0, 10, 5" HorizontalOptions="Start" VerticalOptions="End"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="200" WidthRequest="300" CornerRadius="20" Grid.Row="4"
+                           HasShadow="True" IsClippedToBounds="True" BackgroundColor="White"
+                           Padding="0" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Grid>
+                                <Frame HeightRequest="150" WidthRequest="300" Margin="0" Padding="0"                               
+                                       VerticalOptions="Start" HorizontalOptions="Start">
+                                    <Image Margin="0" Aspect="AspectFill"
+                                           HeightRequest="150" WidthRequest="300"
+                                           VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="StartAndExpand"
+                                           Source="Sayur.jpg"/>
+                                </Frame>
+                                <Label Text="Sayuran Hijau" FontFamily="ptsans_bold.ttf" FontSize="20" TextColor="White"
+                                   Margin="10, 0, 10, 10" HorizontalOptions="Start" VerticalOptions="End"/>
+                            </Grid>
+                            <Label Text="Sayuran Hijau memiliki kandungan serat yang sangat tinggi sehingga membuat kenyang lebih lama." 
+                                   FontFamily="ptsans.ttf" FontSize="14" TextColor="#1687a7"
+                                   Margin="10, 0, 10, 5" HorizontalOptions="Start" VerticalOptions="End"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="200" WidthRequest="300" CornerRadius="20" Grid.Row="5"
+                           HasShadow="True" IsClippedToBounds="True" BackgroundColor="White"
+                           Padding="0" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Grid>
+                                <Frame HeightRequest="150" WidthRequest="300" Margin="0" Padding="0"                               
+                                   VerticalOptions="Start" HorizontalOptions="Start">
+                                    <Image Margin="0" Aspect="AspectFill"
+                                           HeightRequest="150" WidthRequest="300"
+                                           VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="StartAndExpand"
+                                           Source="Buah.jpg"/>
+                                </Frame>
+                                <Label Text="Buah-Buahan" FontFamily="ptsans_bold.ttf" FontSize="20" TextColor="White"
+                                       Margin="10, 0, 10, 10" HorizontalOptions="Start" VerticalOptions="End"/>
+                            </Grid>
+                            <Label Text="Buah-buahan memiliki berbagai menfaat salah satunya menurunkan berat badan, terumata apel dan pir." 
+                                   FontFamily="ptsans.ttf" FontSize="14" TextColor="#1687a7"
+                                   Margin="10, 0, 10, 5" HorizontalOptions="Start" VerticalOptions="End"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame HeightRequest="200" WidthRequest="300" CornerRadius="20" Grid.Row="6"
+                           HasShadow="True" IsClippedToBounds="True" BackgroundColor="White"
+                           Padding="0" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Grid>
+                                <Frame HeightRequest="150" WidthRequest="300" Margin="0" Padding="0"                               
+                                       VerticalOptions="Start" HorizontalOptions="Start">
+                                    <Image Margin="0" Aspect="AspectFill"
+                                           HeightRequest="150" WidthRequest="300"
+                                           VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="StartAndExpand"
+                                           Source="Protshake.jpg"/>
+                                </Frame>
+                                <Label Text="Protein Shake" FontFamily="ptsans_bold.ttf" FontSize="20" TextColor="White"
+                                       Margin="10, 0, 10, 10" HorizontalOptions="End" VerticalOptions="End"/>
+                            </Grid>
+                            <Label Text="Protein shake adalah minuman dari bubuk protein yang dicampur dengan air." 
+                                   FontFamily="ptsans.ttf" FontSize="14" TextColor="#1687a7"
+                                   Margin="10, 0, 10, 5" HorizontalOptions="Start" VerticalOptions="End"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="200" WidthRequest="300" CornerRadius="20" Grid.Row="7"
+                           HasShadow="True" IsClippedToBounds="True" BackgroundColor="White"
+                           Padding="0" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Grid>
+                                <Frame HeightRequest="150" WidthRequest="300" Margin="0" Padding="0"                               
+                                       VerticalOptions="Start" HorizontalOptions="Start">
+                                    <Image Margin="0" Aspect="AspectFill"
+                                           HeightRequest="150" WidthRequest="300"
+                                           VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="StartAndExpand"
+                                           Source="Yogurt.jpg"/>
+                                </Frame>
+                                <Label Text="Yogurt" FontFamily="ptsans_bold.ttf" FontSize="20" TextColor="White"
+                                       Margin="10, 0, 10, 10" HorizontalOptions="End" VerticalOptions="End"/>
+                            </Grid>
+                            <Label Text="Yogurt dianggap sebagai minuman penambah berat badan karena mengandung lemak dan protein." 
+                                   FontFamily="ptsans.ttf" FontSize="14" TextColor="#1687a7"
+                                   Margin="10, 0, 10, 5" HorizontalOptions="Start" VerticalOptions="End"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="200" WidthRequest="300" CornerRadius="20" Grid.Row="8"
+                           HasShadow="True" IsClippedToBounds="True" BackgroundColor="White"
+                           Padding="0" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Grid>
+                                <Frame HeightRequest="150" WidthRequest="300" Margin="0" Padding="0"                               
+                                       VerticalOptions="Start" HorizontalOptions="Start">
+                                    <Image Margin="0" Aspect="AspectFill"
+                                           HeightRequest="150" WidthRequest="300"
+                                           VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="StartAndExpand"
+                                           Source="Infused.jpg"/>
+                                </Frame>
+                                <Label Text="Infused Water" FontFamily="ptsans_bold.ttf" FontSize="20" TextColor="White"
+                                       Margin="10, 0, 10, 10" HorizontalOptions="Start" VerticalOptions="End"/>
+                            </Grid>
+                            <Label Text="Infused water adalah minuman campuran air putih dan buah-buahan yang direndam selama beberapa jam" 
+                                   FontFamily="ptsans.ttf" FontSize="14" TextColor="#1687a7"
+                                   Margin="10, 0, 10, 5" HorizontalOptions="Start" VerticalOptions="End"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="200" WidthRequest="300" CornerRadius="20" Grid.Row="9"
+                           HasShadow="True" IsClippedToBounds="True" BackgroundColor="White"
+                           Padding="0" VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Grid>
+                                <Frame HeightRequest="150" WidthRequest="300" Margin="0" Padding="0"                               
+                                       VerticalOptions="Start" HorizontalOptions="Start">
+                                    <Image Margin="0" Aspect="AspectFill"
+                                           HeightRequest="150" WidthRequest="300"
+                                           VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="StartAndExpand"
+                                           Source="Tehhitam.jpg"/>
+                                </Frame>
+                                <Label Text="Teh Hitam" FontFamily="ptsans_bold.ttf" FontSize="20" TextColor="White"
+                                       Margin="10, 0, 10, 10" HorizontalOptions="Start" VerticalOptions="End"/>
+                            </Grid>
+                            <Label Text="Teh hitam mampu mengurangi lemak di perut dan membantu penurunan berat badan." 
+                                   FontFamily="ptsans.ttf" FontSize="14" TextColor="#1687a7"
+                                   Margin="10, 0, 10, 5" HorizontalOptions="Start" VerticalOptions="End"/>
+                        </StackLayout>
+                    </Frame>
+                </Grid>
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

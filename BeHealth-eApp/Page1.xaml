@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeHealth_eApp.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Berat Badan Ideal" TextColor="#276678" 
+                   Padding="0" FontFamily="ptsans_bold.ttf"
+                   FontSize="24" Margin="30, 30, 30, 20"
+                   VerticalOptions="Start" HorizontalOptions="Start"/>
+            <Label x:Name="lblUsername" Text="Hai, -" TextColor="#276678" Padding="0" FontFamily="ptsans.ttf"
+                   FontSize="18" Margin="30, 0, 30, 0" VerticalOptions="Start" HorizontalOptions="Start"/>
+            <Grid Margin="30, 20, 30, 0" Padding="0">
+                <StackLayout WidthRequest="147" HorizontalOptions="Start" VerticalOptions="Start" Margin="0">
+                    <Frame WidthRequest="145" HeightRequest="60" Padding="0"
+                           BackgroundColor="#d3e0ea" CornerRadius="20"
+                           Margin="0" HasShadow="True">
+                        <Grid>
+                            <Label Text="Tinggi Badan (m):" VerticalOptions="Start" Padding="3"
+                                   HorizontalOptions="Center" FontFamily="ptsans.ttf"
+                                   TextColor="#276678"/>
+                            <Label x:Name="lblTinggi_Badan" Text="-" FontSize="36" Margin="0" Padding="0"
+                                   VerticalOptions="End" HorizontalOptions="Center"
+                                   FontFamily="ptsans_bold.ttf" TextColor="#276678"/>
+                        </Grid>
+                    </Frame>
+                    <Frame WidthRequest="145" HeightRequest="60" Padding="0"
+                           BackgroundColor="#d3e0ea" CornerRadius="20"                           
+                           Margin="0" HasShadow="True">
+                        <Grid>
+                            <Label Text="Berat Badan (kg):" VerticalOptions="Start" Padding="3"
+                                   HorizontalOptions="Center" FontFamily="ptsans.ttf"
+                                   TextColor="#276678"/>
+                            <Label x:Name="lblBerat_Badan" Text="-" FontSize="36" Margin="0" Padding="0"
+                                   VerticalOptions="End" HorizontalOptions="Center"
+                                   FontFamily="ptsans_bold.ttf" TextColor="#276678"/>
+                        </Grid>
+                    </Frame>
+                    <Grid HeightRequest="125" WidthRequest="145" Margin="0, 0, 5, 0">
+                        <Frame HeightRequest="125" WidthRequest="70" Padding="0" Margin="0"
+                               HorizontalOptions="Start" VerticalOptions="Center" CornerRadius="20">
+                            <Image x:Name="imgMale" Margin="0" Aspect="AspectFit" HeightRequest="125" WidthRequest="70"
+                                   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                                   Source="Male.png" Opacity="0.2"/>
+                        </Frame>
+                        <Frame HeightRequest="125" WidthRequest="70" Padding="0" Margin="0"
+                               HorizontalOptions="End" VerticalOptions="Center" CornerRadius="20">
+                            <Image x:Name="imgFemale" Margin="0" Aspect="AspectFit" HeightRequest="125" WidthRequest="70"
+                                   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                                   Source="Female.png" Opacity="0.2"/>
+                        </Frame>
+                    </Grid>
+                    <Frame x:Name="frameIMT" WidthRequest="145" HeightRequest="125" Padding="0" Margin="0"
+                           BackgroundColor="#11698e" CornerRadius="20" HasShadow="True">
+                        <Grid>
+                            <Label Text="Jenis IMB Badan:" VerticalOptions="Start" Padding="10"
+                                   HorizontalOptions="Center" FontFamily="ptsans.ttf"
+                                   TextColor="#f6f5f5"/>
+                            <Label x:Name="lblJenis_IMT" Text="-" FontSize="20" Margin="0" Padding="0"
+                                   VerticalOptions="Center" HorizontalOptions="Center"
+                                   FontFamily="ptsans_bold.ttf" TextColor="#f6f5f5"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout WidthRequest="147" HorizontalOptions="End" VerticalOptions="Start" Margin="0">
+                    <Frame WidthRequest="145" HeightRequest="125" Padding="0"
+                           BackgroundColor="#1687a7" CornerRadius="20"
+                           Margin="0" HasShadow="True">
+                        <Grid>
+                            <Label Text="IMB:" VerticalOptions="Start" Padding="10"
+                                   HorizontalOptions="Center" FontFamily="ptsans.ttf"
+                                   TextColor="#f6f5f5"/>
+                            <Label x:Name="lblIMT" Text="-" FontSize="48" Margin="0" Padding="0"
+                                   VerticalOptions="Center" HorizontalOptions="Center"
+                                   FontFamily="ptsans_bold.ttf" TextColor="#f6f5f5"/>
+                        </Grid>
+                    </Frame>
+                    <Frame WidthRequest="145" HeightRequest="125" Padding="0"
+                           BackgroundColor="#8ACCDF" CornerRadius="20"
+                           Margin="0" HasShadow="True">
+                        <Grid>
+                            <Label Text="Berat Badan Ideal:" VerticalOptions="Start" Padding="10"
+                                   HorizontalOptions="Center" FontFamily="ptsans.ttf"
+                                   TextColor="#1687a7"/>
+                            <Label x:Name="lblBeratBadanIdeal" Text="-" FontSize="48" Margin="0" Padding="0"
+                                   VerticalOptions="Center" HorizontalOptions="Center"
+                                   FontFamily="ptsans_bold.ttf" TextColor="#1687a7"/>
+                        </Grid>
+                    </Frame>
+                    <Frame WidthRequest="145" HeightRequest="125" Padding="0"
+                           BackgroundColor="#B9CDDC" CornerRadius="20"
+                           Margin="0" HasShadow="True">
+                        <Grid>
+                            <Label Text="Jenis Diet:" VerticalOptions="Start" Padding="10"
+                                   HorizontalOptions="Center" FontFamily="ptsans.ttf"
+                                   TextColor="#276678"/>
+                            <Label x:Name="lblJenis_Diet" Text="-" FontSize="20" Margin="0" Padding="0"
+                                   VerticalOptions="Center" HorizontalOptions="Center"
+                                   FontFamily="ptsans_bold.ttf" TextColor="#276678"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
