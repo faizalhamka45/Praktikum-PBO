@@ -1,4 +1,3 @@
-[BeHealth-eApp_463602_463603.pdf](https://github.com/faizalhamka45/Praktikum-PBO/files/6644103/BeHealth-eApp_463602_463603.pdf)
 # Praktikum-PBO
 pengembangan aplikasi BeHealth-e
 dibawah ini merupakan class diagram yang telah dirancang untuk pengembangan aplikasi BeHealth-e 
